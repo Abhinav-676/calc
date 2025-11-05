@@ -1,4 +1,3 @@
-// ES6 Classes
 class OpNode {
     constructor(left, right, op) {
         this.left = left
@@ -7,7 +6,6 @@ class OpNode {
     }
 }
 
-// ES6 Classes
 class ValNode {
     constructor(val) {
         this.val = val
@@ -15,7 +13,6 @@ class ValNode {
 }
 
 
-// ES6 Classes
 export class Expression {
     constructor(exp) {
         this.exp = this.parse_exp(exp)
@@ -83,7 +80,6 @@ export class Expression {
     }
 
     evaluate() {
-        // ES6 arrow functions
         const traverse_evaluate = (node) => {
             if (node instanceof ValNode) {
                 return node;
